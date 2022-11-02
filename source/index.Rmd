@@ -1,0 +1,15 @@
+---
+title: "COVID-19 Report"
+output: html_document
+date: '2022-11-02'
+---
+
+```{r, echo = FALSE}
+source("analysis.R")
+```
+
+In our analysis we found that there was `r get_total_cases()` cases and then there was `r get_total_deaths()` deaths.
+
+```{r, echo = TRUE}
+cases_plot
+```
